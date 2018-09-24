@@ -11,7 +11,7 @@ $(function () {
 			success : function(result){
 				var token = result.token;
 				if(token!=null&&token!=''){
-					getInfo(token);
+					getInfo();
 				}
 				/*if(result.code==10000){
 					window.location.href = "/account-index.html";
@@ -23,14 +23,14 @@ $(function () {
 
     });
 	
-	function getInfo(token){
+	function getInfo(){
 		$.ajax({ 
 			type : "GET", 
 			url  : "/sign-user/user/info",   
 			contentType : 'application/json',
 			headers: {
 				Accept: "application/json; charset=utf-8",
-				Authorization: "Bearer " + token
+				Authorization: "Bearer " + getToken()
 			}, 
 			success : function(result){
 				alert(result);
