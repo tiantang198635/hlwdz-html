@@ -60,5 +60,33 @@ var http = {
 	//页面跳转
 	forward:function(url){
 		window.location.href = url;
+	},
+	//判断是否登录，未登录则跳转到登录页登录
+	isLogin:function(){
+		var token = http.getToken();
+		if(token==null||token==''){
+			http.forward("/login.html");
+		}
+	},
+	//获取URL中的参数值
+	getQueryString:function(name){
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");		    
+		var r = window.location.search.substr(1).match(reg);		    
+		if (r != null){
+			return unescape(r[2]); 
+		}
+		return null;
+	}
+}
+
+
+var comm = {
+	//定时显示
+	showTime:function(time,msg,id){
+		$('#'+id).html(msg);
+		$('#'+id).show();
+		setTimeout(function(){
+			$('#'+id).hide();
+		},time);
 	}
 }
