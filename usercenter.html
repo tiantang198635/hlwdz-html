@@ -14,6 +14,7 @@
     <!-- Icon Font CSS -->
     <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/glyphicons.less">
     <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
     <!-- Plugins stylesheet -->
     <link rel="stylesheet" href="assets/css/plugins.css">
@@ -109,7 +110,7 @@
                             <li>
                               <a class="nav-link active" data-toggle="tab" href="#dashboard">信息管理</a></li>
                             <li>
-                              <a class="nav-link" data-toggle="tab" href="#orders">印章管理</a></li>
+                              <a class="nav-link" data-toggle="tab" href="#signMgt">印章管理</a></li>
                             <li>
                               <a class="nav-link" data-toggle="tab" href="#contact">联系人管理</a></li> 
                           </ul>
@@ -233,45 +234,140 @@
 <button class="btn btn-primary">开启</button>
 												</span> 
 											  </p>
-											</div> 
+											</div>  
 										  </div> 
 										</div>
 									  </div>
 									  <!-- end of comment form --></div>
 									<!-- end of comment-area --></div>
 								</div>
+								
 								<!-- end of row -->
                               </div>  
 							</div>
                             <!-- end of tab-pane -->
-                            <div id="orders" class="tab-pane fade"> 
-							  <div class="row align-items-center no-gutters">
-								<div class="col-sm-3"><h4>我的印章</h4></div> 
-							  </div>
-                              <div class="table-responsive margin-top-20">
-								<div class="col-12 col-sm-12 col-md-5 col-lg-3 float-left"> 
-                                 <div class="seal-item add-seal"><i class="ion-md-add-circle font-size-50"></i></div>
-								</div>
-								<div class="col-12 col-sm-12 col-md-5 col-lg-3 float-left"> 
-                                 <div  class="seal-item" style="">
-									<div  class="seal-img" style="background-image: url(assets/images/yinzhang/e849a101-3070-4340-ae45-678c4c3e5aeb.png);"></div> 
-									<div class="seal-doc"><div class="seal-name">陈志雄</div> 
-									<div class="seal-createdTime">创建日期：2018-08-06</div></div> 
-									<div class="seal-tips">默认印章<i  class="sanjiao"></i></div>
-									<div class="seal-tips verify" style="display: none;">审核中<i  class="sanjiao"></i></div> 
-									<div  class="seal-tips refuse" style="display: none;">被驳回<i class="sanjiao"></i></div></div>
-								</div>
-                              </div> 
+                            <div id="signMgt" class="tab-pane fade"> 
+								<div id="printList">
+								  <div class="row align-items-center no-gutters">
+									<div class="col-sm-3"><h4>我的印章</h4></div> 
+								  </div>
+								  <div class="table-responsive margin-top-20">
+									<div class="col-12 col-sm-12 col-md-5 col-lg-3 float-left"> 
+									 <div class="seal-item add-seal">
+										<i class="ion-md-add-circle font-size-50"></i> 
+									 </div>
+									</div>
+								
+									<div class="col-12 col-sm-12 col-md-5 col-lg-3 float-left"> 
+									 <div  class="seal-item" style="">
+										<div  class="seal-img" style="background-image: url(assets/images/yinzhang/e849a101-3070-4340-ae45-678c4c3e5aeb.png);"></div> 
+										<div class="seal-doc"><div class="seal-name">陈志雄</div> 
+										<div class="seal-createdTime">创建日期：2018-08-06</div></div> 
+										<div class="seal-tips">默认印章<i  class="sanjiao"></i></div>
+										<div class="seal-tips verify" style="display: none;">审核中<i  class="sanjiao"></i></div> 
+										<div  class="seal-tips refuse" style="display: none;">被驳回<i class="sanjiao"></i></div></div>
+									</div>
+								  </div> 
 
-							  <div class="row align-items-center no-gutters margin-top-20">
-								<div class="col-sm-3"><h4>授权于我的印章</h4></div> 
-							  </div>
-                              <div class="table-responsive margin-top-20">
-								<div class="col-12 col-sm-12 col-md-5 col-lg-12 text-center"> 
-                                 暂无数据
-								</div> 
-                              </div>   							  
+								  <div class="row align-items-center no-gutters margin-top-20">
+									<div class="col-sm-3"><h4>授权于我的印章</h4></div> 
+								  </div>
+								  <div class="table-responsive margin-top-20">
+									<div class="col-12 col-sm-12 col-md-5 col-lg-12 text-center"> 
+									 暂无数据
+									</div> 
+								  </div>   	
+								</div>
+								
+								<!--上传印章start-->
+								<div id="upSignDiv" class="tab-pane hide">
+									<div class="row align-items-center no-gutters">
+										<div class="col-sm-3" id="print-back"><h4>&lt;&lt;返回</h4></div> 
+									</div> 
+									<div class="row">
+									  <div class="col-12 col-sm-12 col-md-12 col-lg-6 text-center">
+										<div class="print-online">
+											<div id="uploadPrint0" class="uploadPrint">
+											   <div class="margin-top-pec-40"><h1>陈志雄</h1></div>
+											</div>
+											<div id="uploadPrint1" class="uploadPrint hide">
+											   <div class="margin-top-pec-40"><h1>陈志雄二维码</h1></div>
+											</div>
+											<div id="uploadPrint2" class="uploadPrint hide">
+											   <form method="POST" action="" enctype="multipart/form-data" id="uploadForm">
+												<div><input type="file" name="file" id="file"/></div>
+												<div>支持jpg/jpeg/png/bmp格式图片上传，图片大小在5M以内</div> 
+												<div class="default-color">请上传与您实名信息一致的印章</div> 
+												<div class="default-danger"></div>
+												<div><span class="default-btn big-btn mt-4" id="uploadBtn">上传图片</span></div> 
+											   </form>
+											</div>
+											<div id="uploadPrint3" class="uploadPrint margin-top-pec-40 hide"></div>
+										</div>
+									  </div>
+									  
+									  <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+										 <form id="login-form" role="form" class="form-horizontal"> 
+											<input type="hidden" id="printImg" name="printImg"/>
+											<div class="form-group row align-items-center">
+											  <label for="printName" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>印章名称</strong></label>
+											  <div class="col-12 col-sm-12 col-md-12">
+												<input type="text" class="form-control" id="printName" name="printName" placeholder="输入印章名称" required>
+											  </div>
+											</div>
+											<div class="form-group row align-items-center" id="print-create-type">
+											  <label for="createType" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>创建方式</strong></label> 
+											  <div class="col-12 col-sm-12 col-md-3"><input type="radio" name="createType" value="0" checked/>模板印章</div>
+											  <div class="col-12 col-sm-12 col-md-3"><input type="radio" name="createType" value="1"/>手绘印章</div>
+											  <div class="col-12 col-sm-12 col-md-6"><input type="radio" name="createType" value="2"/>本地上传（需审核）</div> 
+											</div>
+											<div class="form-group row align-items-center" id="print-color">
+											  <input type="hidden" id="printColor" name="printColor" value="red"/>
+											  <label for="signName" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>颜色</strong></label>
+											  <div class="col-12 col-sm-12 col-md-4">
+												<p class="color-item-RED height50 text-center" attr="red"><i class="ion-ios-checkmark-circle-outline color-white"></i></p>
+											  </div>
+											  <div class="col-12 col-sm-12 col-md-4">
+												<p class="color-item-BLUE height50 text-center" attr="blue"></p>
+											  </div>
+											  <div class="col-12 col-sm-12 col-md-4">
+												<p class="color-item-BLACK height50 text-center" attr="black"></p>
+											  </div>
+											</div>
+											<div class="form-group row align-items-center print-style">
+											  <input type="hidden" id="printStyle" name="printStyle" value="1"/>
+											  <label for="signName" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>印章样式</strong></label>
+											  <div class="col-12 col-sm-12 col-md-4">
+												<p class="type-item item-active" attr="1"><img src="assets/images/icons/t1.png"/></p>
+											  </div>
+											  <div class="col-12 col-sm-12 col-md-4">
+												<p class="type-item"" attr="2"><img src="assets/images/icons/t2.png"/></p>
+											  </div>
+											  <div class="col-12 col-sm-12 col-md-4">
+												<p class="type-item"" attr="3"><img src="assets/images/icons/t3.png"/></p>
+											  </div> 
+											</div>
+											<div class="form-group row align-items-center print-style"> 
+											  <div class="col-12 col-sm-12 col-md-4">
+												<p class="type-item"" attr="4"><img src="assets/images/icons/t4.png"/></p>
+											  </div>
+											  <div class="col-12 col-sm-12 col-md-4">
+												<p class="type-item"" attr="5"><img src="assets/images/icons/t5.png"/></p>
+											  </div>
+											  <div class="col-12 col-sm-12 col-md-4">
+												<p class="type-item"" attr="6"><img src="assets/images/icons/t6.png"/></p>
+											  </div>
+											</div>
+											<div class="login-box mt-5 text-center"> 
+											  <button type="submit" class="default-btn big-btn mt-4" id="submitBtn">创建</button>
+											</div> 
+										</form> 
+									  </div>
+									</div> 
+								</div>
+								<!--上传印章end-->
                             </div>
+							
                             <!-- end of tab-pane -->
                             <div id="contact" class="tab-pane fade">
 							  <div class="row align-items-center no-gutters">
@@ -463,16 +559,21 @@
       <!-- End of Footer --> 
 	  </div>
     <!-- End of Whole Site Wrapper --> 
-    <!-- JS============================================- -><!-- jQuery JS -->
+    <!-- JS============================================- ->
+	<!-- jQuery JS -->
     <script src="assets/js/jquery.1.12.4.min.js"></script>
+	<script src="assets/js/jquery.cookie.js"></script> 
+	<script src="assets/js/jquery-form.js"></script>  
     <!-- Popper JS -->
     <script src="assets/js/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
+	
     <!-- Plugins JS -->
     <script src="assets/js/plugins.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-    </body>
-
+	<script src="assets/js/global.js"></script>
+	<script src="assets/js/usercenter.js"></script>
+  </body>
 </html>

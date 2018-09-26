@@ -36,10 +36,40 @@ var http = {
 			type : "POST", 
 			url  : url,   
 			contentType : 'application/json',
+			headers: {
+				Accept: "application/json; charset=utf-8",
+				Authorization: "Bearer " + token
+			},
 			data : JSON.stringify(data), 
 			success : function(result){
 				callback(result);
 			}
+		});
+	},
+	/**
+	 * ajaxSubmit
+	 */
+	authAjaxSubmit:function(formId,url,callback){
+		var token = http.getToken();
+		if(http.validateUrl(url)&&(token==null||token=='')){
+			window.location.href = "/login.html"; 
+			return;
+		}
+		$("#"+formId).ajaxSubmit({
+			url: url, /*设置post提交到的页面*/
+			type: "post", /*设置表单以post方法提交*/
+			headers: {
+				Accept: "application/json; charset=utf-8",
+				Authorization: "Bearer " + token
+			},
+			dataType: "json", /*设置返回值类型为文本*/
+			success: function (data) {
+				callback(data);
+			},
+			error: function (error) {
+				console.info(error);
+			}
+
 		});
 	},
 	/**

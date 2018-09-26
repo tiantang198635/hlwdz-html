@@ -27,7 +27,7 @@ $(function () {
 			var pwd = $('#pwd').val();
 			 
 			http.authPost("/sign-user/auth",{name:account,pwd:pwd},function(result){ 
-				if(result!=null&&result.code==10000){
+				if(result!=null&&result.code==1000){
 					/*http.authGet("/sign-user/user/info",function(result){
 						alert(result);
 					});*/
