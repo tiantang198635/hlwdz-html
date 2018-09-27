@@ -21,9 +21,36 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- modernizr JS============================================- -><script src="assets/js/modernizr-2.8.3.min.js"></script></head><body><!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please upgrade your browser to improve your experience.</p><![endif]-->
+    <!-- modernizr JS============================================ -->
+	<script src="assets/js/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+	<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please upgrade your browser to improve your experience.</p><![endif]-->
+	
     <!-- Start of Whole Site Wrapper with mobile menu support -->
     <div id="whole" class="whole-site-wrapper color-scheme-one">
+		<div id="addtemplate_popup" class="model-popup" style="opacity: 1;">
+			<div class="popup-container">
+				<div class="popup-close"><span class="p-close"><span>X</span></span></div>
+				<div class="popup-area text-center"> 
+					<div class="popup-body">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+							<form id="login-form" role="form" class="form-horizontal">  
+								<div class="form-group row text-left">
+								  <label for="contactUserName" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>选择模板文件</strong></label>
+								  <div class="col-12 col-sm-12 col-md-12">
+									<input type="file" name="file" id="file"/>
+								  </div>
+								</div> 
+							</form>
+						</div>
+						<div class="subscribe-form-group"> 
+							<button type="submit" class="default-btn big-btn mt-4" id="saveTemplateBtn">添加</button> 
+						</div>
+					</div><!-- end of popup-body --> 
+				</div><!-- end of popup-area -->
+			</div><!-- end of popup-container -->
+		</div>
       <!-- Start of Header -->
       <header class="header bgc-white inner-header">
         <div class="header-area">
@@ -43,7 +70,7 @@
                     <div class="col-12 col-sm-12 col-md-5 col-lg-3 text-left"> 
                         <div class="header-cart"> 
                           <div class="user-info">
-							<p class="user-name">Hello
+							<p class="user-name">剩余套餐:&nbsp;<a href="accountMgt.html" class="default-color">1</a>&nbsp;次
 							<br>
                               <span>陈志雄</span>
                               [<a class="log-out" href="login.html">退出</a>]
@@ -68,13 +95,17 @@
                   <a href="account-index.html">
                     <span>账户首页</span></a> 
                 </li>
+				<li>
+					<a href="setmeal.html">
+					  <span>套餐中心</span></a> 
+				  </li>
                 <li>
                   <a href="myht.html">
                     <span>我的合同</span></a> 
                   </li>
                   <li>
                     <a href="mymb.html">
-                      <span>我的模板</span></a> 
+                      <span>合同模板</span></a> 
                   </li>
 				   <li>
                     <a href="accountMgt.html">
@@ -104,7 +135,7 @@
                       <div class="row align-items-center no-gutters"> 
                         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-12">
                           <div class="single-info  text-right">  
-                            <a class="btn btn-customer-1" href="cart.html">+上传模板</a> 
+                            <a class="btn btn-customer-1" id="addTemplateBtn" href="javascript:void(0)">+添加模板</a> 
 						  </div>
                         </div>
                       </div> 
@@ -189,5 +220,6 @@
 	<script src="assets/js/plugins.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+	<script src="assets/js/template.js"></script>
   </body>
 </html>

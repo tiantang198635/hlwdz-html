@@ -22,7 +22,8 @@
     <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="assets/css/responsive.css"> 
 	<script src="assets/js/modernizr-2.8.3.min.js"></script></head>
-	<body><!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please upgrade your browser to improve your experience.</p><![endif]-->
+	<body>
+	<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please upgrade your browser to improve your experience.</p><![endif]-->
     <!-- Start of Whole Site Wrapper with mobile menu support -->
     <div id="whole" class="whole-site-wrapper color-scheme-one">
       <!-- Start of Header -->
@@ -44,7 +45,7 @@
                     <div class="col-12 col-sm-12 col-md-5 col-lg-3 text-left"> 
                         <div class="header-cart"> 
                           <div class="user-info">
-							<p class="user-name">Hello
+							<p class="user-name">剩余套餐:&nbsp;<a href="accountMgt.html" class="default-color">1</a>&nbsp;次
 							<br>
                               <span>陈志雄</span>
                               [<a class="log-out" href="login.html">退出</a>]
@@ -68,13 +69,17 @@
                   <a href="account-index.html">
                     <span>账户首页</span></a> 
                 </li>
+				<li>
+					<a href="setmeal.html">
+					  <span>套餐中心</span></a> 
+				  </li>
                 <li>
                   <a href="myht.html">
                     <span>我的合同</span></a> 
                   </li>
                   <li>
                     <a href="mymb.html">
-                      <span>我的模板</span></a> 
+                      <span>合同模板</span></a> 
                   </li>
 				   <li>
                     <a href="accountMgt.html">
@@ -114,11 +119,7 @@
 							<li>
                               <a class="nav-link" data-toggle="tab" href="#consumerQuery">查询消费账单</a></li> 
 							<li>
-                              <a class="nav-link" data-toggle="tab" href="#consumerDetail">查询消费明细</a></li> 
-                            <li>
-                              <a class="nav-link" data-toggle="tab" href="#elecSignature">电子签名套餐</a></li>
-                            <li>
-                              <a class="nav-link" data-toggle="tab" href="#realAuth">实名认证套餐</a></li> 
+                              <a class="nav-link" data-toggle="tab" href="#consumerDetail">查询消费明细</a></li>  
                           </ul>
                           <!-- end of dashboard-list --></div>
                         <div class="col-12 col-sm-12 col-md-12 col-lg-10">
@@ -131,25 +132,30 @@
                               
 							  <div class="single-post-wrapper">
 								<div class="row">
-								  <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-									<div class="author-box">
-									  <div class="media"> 
-										<div class="author-description media-body text-center">
-										  <h6>账户余额：<span class="text-special">2￥</span></h6> 
-										</div>
-									  </div>
+									<div class="col-12 col-md-6 col-lg-6">
+									<div class="feature-box type-2 media align-items-center">
+									 <div class="feature-icon mr-4 mr-md-3 mr-lg-4">
+									  <i class="pe-7s-loop"></i>
+									 </div>
+									 <div class="feature-content media-body"> 
+										<h2>账户余额：</h2> 
+										<p><span class="text-special">2￥</span></p>
+									 </div>
 									</div>
-								  </div>
-								  
-								  <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-									<div class="author-box">
-									  <div class="media"> 
-										<div class="author-description media-body text-center">
-										  <h6>优惠券：<span class="text-special">无</span></h6> 
-										</div>
-									  </div>
+									<!-- end of feaure-box -->
+								   </div>
+								   <div class="col-12 col-md-6 col-lg-6">
+									<div class="feature-box type-2 media align-items-center">
+									 <div class="feature-icon mr-4 mr-md-3 mr-lg-4">
+									  <i class="pe-7s-ticket"></i>
+									 </div>
+									 <div class="feature-content media-body">
+									  <h2>优惠券：</h2>
+									  <p><span class="text-special">无</span></p>
+									 </div>
 									</div>
-								  </div>
+									</div>
+									 
 								  <div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
 									<!-- end of post-pagination -->
 									<div id="comments" class="comments-area">
@@ -422,109 +428,7 @@
 								  </div>
 								</div>
 							  </div> 							  
-                            </div>
-							
-							<div id="elecSignature" class="tab-pane fade">  
-                              <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-								 <article class="blog-post post-entry">
-								  <div class="blog-grid">
-									<div class="content-wrapper"> 
-									  <div class="post-content"> 
-										<h3 class="post-title text-center text-special">单次套餐</h3>
-										  <p>此为e签宝文件签署服务单次套餐，每签署一次需要支付2元签署服务费</p>
-									  </div>
-									  <div class="post-footer">
-										<div class="post-meta">
-										  <ul>
-											<li><span class="price-new text-special">￥120.00</span></li>
-											<li><span class="price-old">￥330.00</span></li>
-										  </ul>
-										</div>
-										<div class="post-more">
-										  <button class="btn-customer-1">立即购买</button>
-										</div>
-									  </div>
-									</div>
-								  </div>
-								  </article>
-								</div>
-								<div class="col-12 col-sm-12 col-md-6 col-lg-4">
-								 <article class="blog-post post-entry">
-								  <div class="blog-grid">
-									<div class="content-wrapper"> 
-									  <div class="post-content"> 
-										<h3 class="post-title text-center text-special">单次套餐</h3>
-										  <p>此为e签宝文件签署服务单次套餐，每签署一次需要支付2元签署服务费</p>
-									  </div>
-									  <div class="post-footer">
-										<div class="post-meta">
-										  <ul>
-											<li><span class="price-new text-special">￥120.00</span></li>
-											<li><span class="price-old">￥330.00</span></li>
-										  </ul>
-										</div>
-										<div class="post-more">
-										  <button class="btn-customer-1">立即购买</button>
-										</div>
-									  </div>
-									</div>
-								  </div>
-								  </article>
-								</div>
-								<div class="col-12 col-sm-12 col-md-6 col-lg-4">
-								 <article class="blog-post post-entry">
-								  <div class="blog-grid">
-									<div class="content-wrapper"> 
-									  <div class="post-content"> 
-										<h3 class="post-title text-center text-special">单次套餐</h3>
-										  <p>此为e签宝文件签署服务单次套餐，每签署一次需要支付2元签署服务费</p>
-									  </div>
-									  <div class="post-footer">
-										<div class="post-meta">
-										  <ul>
-											<li><span class="price-new text-special">￥120.00</span></li>
-											<li><span class="price-old">￥330.00</span></li>
-										  </ul>
-										</div>
-										<div class="post-more">
-										  <button class="btn-customer-1">立即购买</button>
-										</div>
-									  </div>
-									</div>
-								  </div>
-								  </article>
-								</div>
-                              </div>  						  
-                            </div>
-							
-							<div id="realAuth" class="tab-pane fade">  
-                              <div class="row">
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-								 <article class="blog-post post-entry">
-								  <div class="blog-grid">
-									<div class="content-wrapper"> 
-									  <div class="post-content"> 
-										<h3 class="post-title text-center text-special">单次套餐</h3>
-										  <p>此为e签宝文件签署服务单次套餐，每签署一次需要支付2元签署服务费</p>
-									  </div>
-									  <div class="post-footer">
-										<div class="post-meta">
-										  <ul>
-											<li><span class="price-new text-special">￥120.00</span></li>
-											<li><span class="price-old">￥330.00</span></li>
-										  </ul>
-										</div>
-										<div class="post-more">
-										  <button class="btn-customer-1">立即购买</button>
-										</div>
-									  </div>
-									</div>
-								  </div>
-								  </article>
-								</div>  
-                              </div>  						  
-                            </div>
+                            </div>  
                             <!-- end of tab-pane --></div>
                         </div>
                       </div>

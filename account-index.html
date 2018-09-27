@@ -39,12 +39,12 @@
                 <!-- end of top-header -->
                 <div class="bottom-header">
                   <div class="row align-items-center">
-                    <div class="col-12 col-sm-12 col-md-7 col-lg-7"></div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+					<div class="col-12 col-sm-12 col-md-7 col-lg-9 text-right"> <a class="btn btn-customer-1" href="accountMgt.html">购买套餐</a></div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-3">
                       <div class="header-cart-area">
                         <div class="header-cart">
                           <div class="user-info">
-							<p class="user-name">Hello
+							<p class="user-name">剩余套餐:&nbsp;<a href="accountMgt.html" class="default-color">1</a>&nbsp;次
 							<br>
                               <span>陈志雄</span>
                               [<a class="log-out" href="login.html">退出</a>]
@@ -69,13 +69,17 @@
                   <a href="account-index.html">
                     <span>账户首页</span></a> 
                 </li>
+				<li>
+					<a href="setmeal.html">
+					  <span>套餐中心</span></a> 
+				  </li>
                 <li>
                   <a href="myht.html">
                     <span>我的合同</span></a> 
                   </li>
                   <li>
                     <a href="mymb.html">
-                      <span>我的模板</span></a> 
+                      <span>合同模板</span></a> 
                   </li>
 				  <li>
                     <a href="accountMgt.html">
@@ -102,37 +106,56 @@
                 <main id="primary" class="site-main">
                   <div class="user-dashboard">
                     <div class="header-dashboard">
-                      <div class="row align-items-center no-gutters">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-2">
-                          <div class="single-info text-center">
-                            <p>
-								<div><span class="circle-label btn-customer-1">1</span></div>
-								<a href="">待我签</a>
-							</p>
-						  </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-2">
-                          <div class="single-info text-center">
-                            <p><div><span class="circle-label btn-customer-1">1</span></div><a href="#">待他人签</a></p>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-2">
-                          <div class="single-info text-center">
-                            <p><div><span class="circle-label btn-secondary">1</span></div><a href="#">已完成</a></p>
-                          </div>
-                        </div>
-						<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-2">
-                          <div class="single-info text-center">
-                            <p><div><span class="circle-label btn-warning">1</span></div><a href="#">草稿箱</a></p>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4">
-                          <div class="single-info  text-center"> 
-							<div class="left">套餐剩余次数<span class="">1</span>次</div>
-                            <a class="btn btn-customer-1" href="cart.html">购买套餐</a> 
-						  </div>
-                        </div>
-                      </div>
+					  <div class="row align-items-center">
+					   <div class="col-12 col-md-3 col-lg-3">
+						<div class="feature-box type-2 media align-items-center">
+						 <div class="feature-icon mr-4 mr-md-3 mr-lg-4">
+						  <i class="pe-7s-pen"></i>
+						 </div>
+						 <div class="feature-content media-body"> 
+							<h2>待我签</h2> 
+							<p>数量：<a href="myht.html"><strong>1</strong></a></p>
+						 </div>
+						</div>
+						<!-- end of feaure-box -->
+					   </div>
+					   <div class="col-12 col-md-3 col-lg-3">
+						<div class="feature-box type-2 media align-items-center">
+						 <div class="feature-icon mr-4 mr-md-3 mr-lg-4">
+						  <i class="pe-7s-flag"></i>
+						 </div>
+						 <div class="feature-content media-body">
+						  <h2>待他人签</h2>
+						  <p>数量：<a href="myht.html"><strong>1</strong></a></p>
+						 </div>
+						</div>
+						<!-- end of feaure-box -->
+					   </div>
+					   <div class="col-12 col-md-3 col-lg-3">
+						<div class="feature-box type-2 media align-items-center">
+						 <div class="feature-icon mr-4 mr-md-3 mr-lg-4">
+						  <i class="pe-7s-mail-open-file"></i>
+						 </div>
+						 <div class="feature-content media-body">
+						  <h2>已完成</h2>
+						  <p>数量：<a href="myht.html"><strong>1</strong></a></p>
+						 </div>
+						</div>
+						<!-- end of feaure-box -->
+					   </div>
+					   <div class="col-12 col-md-3 col-lg-3">
+						<div class="feature-box type-2 media align-items-center">
+						 <div class="feature-icon mr-4 mr-md-3 mr-lg-4">
+						  <i class="pe-7s-drawer"></i>
+						 </div>
+						 <div class="feature-content media-body">
+						  <h2>草稿箱</h2>
+						  <p>数量：<a href="myht.html"><strong>1</strong></a></p>
+						 </div>
+						</div>
+						<!-- end of feaure-box -->
+					   </div>
+					  </div> 
 					  
 					  <div class="row align-items-center no-gutters">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4">
