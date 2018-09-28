@@ -257,3 +257,44 @@
     font-size: 20px;
     font-weight: 700;
 }
+.pagingSeal-box{
+    position: absolute;
+    top: 38px;
+    right: 122px;
+    width: 96px;
+    height: 100%;
+    border-radius: 0 14px 14px 0;
+    background: #fff;
+    z-index: 10;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background: url( /assets/images/qif.png) no-repeat 100%;
+    background-size: 100% 100%;
+}
+.pagingSeal{
+    width: 100%;
+    height: 100%;
+}
+.pagingSeal-set  {
+    right: -27px;
+    display: block;
+    position: absolute;
+    top: 100px;
+    color: #fff;
+    background: #4a90e2;
+}
+.pagingSeal-btn {
+    cursor: pointer;
+    width: 32px;
+    padding: 15px 0;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 3px;
+    font-size: 16px;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    border-radius: 0 15px 15px 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
