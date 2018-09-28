@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>编辑模板</title>
+    <title>使用模板</title>
     <meta name="description" content="">
     <meta name="robots" content="noindex, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,7 +106,7 @@
         <div class="my-account-wrapper">
           <div class="contractContainer"> 
 				<div class="col-12 col-sm-12 col-md-12 margin-top-20"> 
-					<a class="breadcrumb-item" href="index.html">&lt;&lt;返回</a>  
+					<a class="breadcrumb-item" href="template.html">&lt;&lt;返回</a>  
 				</div> 
                      
 				<div class="main-dashboard">   
@@ -124,30 +124,17 @@
 								<div class="form-group row align-items-center">
 								  <label for="printName" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>模板名称</strong></label>
 								  <div class="col-12 col-sm-12 col-md-12">
-									<input type="text" class="form-control" id="printName" name="printName" placeholder="输入模板名称" required>
+									<input type="text" class="form-control" id="printName" name="printName" value="我的合同" placeholder="输入模板名称" required>
 								  </div>
-								</div>
+								</div>  
 								<div class="form-group row align-items-center">
-								  <label for="printName" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>设置字体大小</strong></label>
-								  <div class="col-12 col-sm-12 col-md-12">
-									<select class="form-control">
-									  <option>四号字体</option>
-									  <option>五号字体</option> 
-									</select>
-								  </div>
-								</div>
-								<div class="form-group row align-items-center">
-									<div class="col-12 col-sm-12 col-md-12">
-										<div class="dashItem text-center" id="addInputItem">
-										+点击添加输入项
-										</div>
-									</div>
-								</div>
-								<div class="form-group row align-items-center" id="templateItemList"> 
+								  <label for="printName" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>填写输入项</strong></label> 
+								</div> 
+								<div class="form-group row align-items-center" id="templateItemList">   
 								</div>
 								
-								<div class="col-12 col-sm-12 col-md-12">
-									<a class="btn btn-customer-1" id="saveTemplateBtn" href="javascript:void(0)">保存模板</a> 
+								<div class="col-12 col-sm-12 col-md-12 margin-top-50">
+									<a class="btn btn-customer-1" id="saveTemplateBtn" href="javascript:void(0)">生成合同</a> 
 								</div>
 							</form>
 						</div> 
@@ -186,7 +173,7 @@
     <script src="assets/js/plugins.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-	<script src="assets/js/templateEdit.js"></script>
+	<script src="assets/js/templateUse.js"></script>
     </body>
 
 </html>

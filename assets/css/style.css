@@ -128,3 +128,58 @@
 .default-color{color:#ec610a}
 .default-danger{color:red}
 .contractContainer{padding:0px 50px 20px 50px}
+
+.dashItem{border:1px dashed #cbcbcb;height:40px;line-height:40px;color: rgb(175, 175, 175);font-size:16px;}
+.template_pos{
+	left: 50%;
+    top: 50%;
+    min-width: 260px;
+    height: 23.4px;
+	z-index: 2;
+	border: 1px dashed #ec610a;
+	position: absolute;
+	text-align: center;
+	font-size: 16px;
+}
+.template_posInex {
+    width: 18px;
+    height: 18px;
+    background: #ec610a;
+    border-radius: 9px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    top: -9px;
+    left: -9px;
+}
+.template_pos_changeDiv{
+	padding-left:5px;
+}
+.item_close{
+	width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    background: #ec610a;
+	border-radius: 50%;
+	color:#fff;
+	margin-top: 8px;
+}
+.item_num{
+	width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ec610a;
+    display: inline-block;	
+	border-radius: 50%;
+	color:#ec610a
+}
