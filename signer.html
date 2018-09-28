@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>签署合同</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon============================================-->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+	<!-- CSS files    ============================================ -->
+    <!-- Boostrap stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
+    <!-- Plugins stylesheet -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <!-- Master stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">  
+	<body>
+	<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please upgrade your browser to improve your experience.</p><![endif]-->
+    <!-- Start of Whole Site Wrapper with mobile menu support -->
+    <div id="whole" class="whole-site-wrapper color-scheme-one">
+      <!-- Start of Main Content Wrapper -->
+      <div id="content" class="main-content-wrapper">
+        <!-- Start of My Account Wrapper -->
+        <div class="my-account-wrapper">
+          <div class="contractContainer">  
+				<div class="main-dashboard">   
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-2">
+						   <div class="form-group row align-items-center">
+							  <strong>&lt;&lt;返回</strong>
+							</div>
+							<div class="row align-items-center">
+							   <div class="col-12 col-md-12 col-lg-12">
+								<div class="feature-box type-2 media align-items-center item-active attachment"> 
+									<div class="feature-icon mr-4 mr-md-3 mr-lg-4">
+									  <i class="pe-7s-mail-open-file"></i>
+									 </div>
+									 <div class="feature-content media-body text-center"> 
+										<h2>我的合同</h2>  
+									 </div>
+								</div> 
+							   </div>  
+							   
+							   <div class="col-12 col-md-12 col-lg-12">
+								<div class="feature-box type-2 media align-items-center attachment"> 
+									<div class="feature-icon mr-4 mr-md-3 mr-lg-4">
+									  <i class="pe-7s-mail-open-file"></i>
+									 </div>
+									 <div class="feature-content media-body text-center"> 
+										<h2>我的合同1</h2>  
+									 </div>
+								</div> 
+							   </div> 
+							</div>
+						</div> 
+						
+						<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+						  <!-- Tab panes -->
+							<div class="tab-content dashboard-content" id="signerContent" style="margin: 0px auto;background:#dfdfdf" ondragover="allowDrop(event)" ondrop="drop(event)">  
+								<div class="signer_page">1 / 1</div>
+							  <canvas id="signerCanvas" class="canvas" height="1094" width="774px" style="border:1px solid #ccc;margin:20px auto;display: block;text-align:center"></canvas>						  
+							</div>
+							<div class="goto-wrapper">
+								<div  class="goto">
+									<div  class="goto-top">
+										<i class="iconfont sign-icon-stick_icon"></i>
+									</div> 
+									<div class="goto-bottom">
+										<i class="iconfont bottomIcon sign-icon-stick_icon"></i>
+									</div>
+								</div>
+							</div>
+							<!-- end of tab-pane --> 
+						</div> 
+						
+						<div class="col-12 col-sm-12 col-md-12 col-lg-2" style="min-height:500px">   
+							<div class="form-group row align-items-center">
+							  <strong>我的印章</strong>
+							</div>
+							<div class="form-group row align-items-center" id="signImgList">
+								 
+							</div> 
+							
+							<div class="form-group row align-items-center margin-top-50">
+								<div class="col-5 col-sm-5 col-md-5 text-center">
+									<span class="btn btn-customer-secondary padding-lr-20">暂不签署</span>
+								</div>
+								<div class="col-5 col-sm-5 col-md-5 text-center">
+									<span class="btn btn-customer-1  padding-lr-20" id="saveTemplateBtn">签署</span> 
+								</div> 
+							</div>  
+						</div>  
+						  <!-- end of row -->
+					</div> 
+				</div>
+            <!-- end of row --></div>
+          <!-- end of container --></div>
+        <!-- End of My Account Wrapper -->
+        </div>
+      <!-- End of Main Content Wrapper --> 
+	  </div>
+    <!-- End of Whole Site Wrapper --> 
+    <!-- JS============================================- -><!-- jQuery JS -->
+    <script src="assets/js/jquery.1.12.4.min.js"></script> 
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script> 
+	<script src="assets/js/signer.js"></script>
+    </body>
+
+</html>
