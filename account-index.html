@@ -24,6 +24,44 @@
     <!-- modernizr JS============================================- -><script src="assets/js/modernizr-2.8.3.min.js"></script></head><body><!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please upgrade your browser to improve your experience.</p><![endif]-->
     <!-- Start of Whole Site Wrapper with mobile menu support -->
     <div id="whole" class="whole-site-wrapper color-scheme-one">
+		<div id="flow_popup" class="model-popup" style="opacity: 1;visibility:hidden">
+			<div class="popup-container">
+				<div class="popup-close"><span class="p-close"><span>X</span></span></div>
+				<div class="popup-area text-center"> 
+					<div class="popup-body">
+						<div id="comments" class="comments-area"> 
+                          <ol class="comment-list list-unstyled">
+                            <li class="comment-single media">
+                              <div class="comment-author-thumb mr-3 mr-sm-4 margin-top-20">发起人</div>
+                              <div class="comment-content media-body">
+                                <div class="comment-meta d-flex justify-content-between align-items-top">
+                                  <div class="comment-title text-left">
+                                    <h6>陈志雄</h6>
+                                    <span>发起时间
+                                      <span class="comment-date">2018-08-29</span></span>
+                                  </div> 
+                                </div> 
+                              </div>
+                            </li>
+                            <li class="comment-single media flex-wrap">
+                              <div class="comment-author-thumb mr-3 mr-sm-4 margin-top-20">签署人</div>
+                              <div class="comment-content media-body">
+                                <div class="comment-meta d-flex justify-content-between align-items-top">
+                                  <div class="comment-title text-left">
+                                    <h6>陈志雄</h6>
+                                    <span>签署时间
+                                      <span class="comment-date">2018-08-30</span> </span>
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </li>
+                            
+                          </ol> 
+                          <!-- end of comment form --></div>
+					</div><!-- end of popup-body --> 
+				</div><!-- end of popup-area -->
+			</div><!-- end of popup-container -->
+		</div>
       <!-- Start of Header -->
       <header class="header bgc-white inner-header">
         <div class="header-area">
@@ -160,17 +198,17 @@
 					  <div class="row align-items-center no-gutters">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4">
                           <div class="boder-shadow text-center">
-                            <a href="#">发起他人签署</a> 
+                            <a href="initsignature.html">发起他人签署</a> 
 						  </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4">
                           <div class="boder-shadow text-center">
-                            <a href="#">发起自己签署</a> 
+                            <a href="initsignature.html">发起自己签署</a> 
 						  </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-4">
                           <div class="boder-shadow text-center">
-                            <a href="#">发起批量签署</a> 
+                            <a href="initsignature.html">发起批量签署</a> 
 						  </div>
                         </div> 
                       </div>
@@ -201,8 +239,8 @@
                                       <td>陈志雄</td>
                                       <td>待他人签署</td> 
                                       <td>
-                                        <a class="btn btn-customer-1" href="cart.html">催签</a>
-										<a class="btn btn-secondary" href="cart.html">签署流程</a>
+                                        <a class="btn btn-customer-1" href="#">催签</a>
+										<a class="btn btn-secondary signerFlowBtn" href="#">签署流程</a>
 									  </td>
                                     </tr>
                                     <tr>
@@ -210,8 +248,8 @@
                                       <td>陈志雄</td>
                                       <td>待他人签署</td> 
                                       <td>
-                                        <a class="btn btn-customer-1" href="cart.html">催签</a>
-										<a class="btn btn-secondary" href="cart.html">签署流程</a>
+                                        <a class="btn btn-customer-1" href="#">催签</a>
+										<a class="btn btn-secondary signerFlowBtn" href="#">签署流程</a>
 									  </td>
                                     </tr>
                                   </tbody>
@@ -254,5 +292,6 @@
 	<script src="assets/js/plugins.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+	<script src="assets/js/accountIndex.js"></script>
   </body>
 </html>

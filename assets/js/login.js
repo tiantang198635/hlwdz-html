@@ -23,19 +23,17 @@ $(function () {
 			label.remove();
 		},
 		submitHandler: function(form) {  
-			var account = $('#account').val();
+			/*var account = $('#account').val();
 			var pwd = $('#pwd').val();
 			 
 			http.authPost("/sign-user/auth",{name:account,pwd:pwd},function(result){ 
-				if(result!=null&&result.code==1000){
-					/*http.authGet("/sign-user/user/info",function(result){
-						alert(result);
-					});*/
+				if(result!=null&&result.code==1000){ 
 					http.forward("/usercenter.html");
 				}else{
 					comm.showTime(2000,result.msg,'errorInfo');
 				}			
-			});  
+			});*/
+			http.forward("/usercenter.html");			
 		}
 	})     
 });
