@@ -8,7 +8,7 @@
 .margin-top-pec-40{margin-top:40%}
 .margin-right-5{margin-right:5px}
 .margin-right-20{margin-right:20px}.add-seal{border: 1px dashed #e4e6e9;-webkit-transition: all .2s;transition: all .2s;height: 200px;padding: 80px;}.sign-icon-pop {line-height: 80px;font-size: 32px;font-weight: 100;}.sign-icon-pop:before {content: "\e614";}
-.seal-item{ 
+/*.seal-item{ 
     z-index: 20;
     top: 0;
     left: 0;
@@ -19,7 +19,7 @@
     border-radius: 4px;
     -webkit-transition: all .2s;
     transition: all .2s;
-}
+}*/
 .seal-item .seal-img{
     margin: 0 auto;
     margin-top: 40px;
@@ -217,6 +217,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
+	z-index: 999;
 }
 .signer_page {
     position: absolute;
@@ -257,7 +258,7 @@
     font-size: 20px;
     font-weight: 700;
 }
-.pagingSeal-box{
+/*.pagingSeal-box{
     position: absolute;
     top: 38px;
     right: 122px;
@@ -270,12 +271,200 @@
     transition: all .3s;
     background: url( /assets/images/qif.png) no-repeat 100%;
     background-size: 100% 100%;
-}
+} */
 .pagingSeal{
     width: 100%;
     height: 100%;
 }
-.pagingSeal-set  {
+ 
+.pagingSeal-btn {
+    cursor: pointer;
+    width: 32px;
+    padding: 15px 0;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 3px;
+    font-size: 16px;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    border-radius: 0 15px 15px 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.signer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 15% 0 15%;
+    width: 100%;
+    height: 100%;
+    background: #e4e9ee;
+}
+.sign-left-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+}
+.logo, .sign-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+.sign-left {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+.goBack {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300; 
+}
+.goBack .sign-icon-btn_left {
+    margin-right: 6px;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.docList {
+    position: relative;
+    left: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; 
+}
+.docList .item-box {
+    width: 112px;
+    padding: 30px 0;
+}
+.docList .doc-item.doc-item-active {
+    color: #ff334c;
+    background: #fff;
+}
+.docList .doc-item:last-child {
+    margin-bottom: 0;
+}
+.docList .doc-item {
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 11px 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 68px;
+    height: 68px;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 19px;
+    font-size: 14px;
+    color: #4a4a4a;
+    background: #d8d8d8;
+    border-radius: 50%;
+}
+.sign-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.sign-content .pdfDoc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+    padding: 46px 0;
+}
+.sign-content .page {
+    position: relative;
+    line-height: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    z-index: 10;
+}
+.pagingSeal-box.pagingSeal-transition {
+    -webkit-transform: translateX(96px);
+    transform: translateX(96px);
+} 
+.pagingSeal-box {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    width: 96px;
+    height: 100%;
+    border-radius: 0 14px 14px 0;
+    background: #fff;
+    z-index: -1;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background: url(/assets/images/qif.png) no-repeat 100%;
+    background-size: 100% 100%;
+	display:none
+}
+
+.pagingSeal-box:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    left: -14px;
+    background: #fff;
+}
+ 
+.pagingSeal-set {
     right: -27px;
     display: block;
     position: absolute;
@@ -297,4 +486,246 @@
     border-radius: 0 15px 15px 0;
     -webkit-transition: all .3s;
     transition: all .3s;
+}
+
+.pageContainer__page {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 3px 16px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 200;
+    color: #fff;
+    line-height: 25px;
+    border-radius: 8px;
+    background: #9b9b9b;
+}
+.canvas[data-v-3a44fde8] {
+    margin: 0;
+    padding: 0;
+    border-radius: 14px;
+}
+.sign-content .sign-shortcut {
+    position: fixed;
+    left: 136px;
+    bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 24px;
+}
+.pagingSeal-hidden {
+    color: #fff;
+    background: #4a4a4a;
+    border-radius: 15px;
+}
+.pagingSeal-show {
+    position: fixed;
+    bottom: 180px;
+    right: 319px;
+    color: #fff;
+    background: #4a90e2;
+    border-radius: 15px;
+    z-index: 110;
+}
+ 
+.goto-wrapper {
+    position: fixed;
+    right: 310px;
+    bottom: 30px;
+    z-index: 110;
+}
+.goto {
+    width: 50px;
+    height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.goto .goto-bottom, .goto .goto-top {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #9b9b9b;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.sign-right-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+}
+.sign-right-seal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 160px;
+    background: #fdfefe;
+}
+.seal-Tabbar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color: #6a6f73;
+    border-bottom: 1px solid #e4e4e4;
+}
+.seal-Tabbar .sealTab-item-active {
+    position: relative;
+    color: #4a90e2;
+}
+
+.seal-Tabbar .sealTab-item {
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+}
+.seal-Tabbar .sealTab-item-active:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #4a90e2;
+}
+.seal-wrapper {
+    margin-top: 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+.seal-wrapper .seal-doc {
+    padding: 0 30px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    font-size: 12px;
+    color: #6a6f73;
+}
+.seal-wrapper .seal-list-appoint, .seal-wrapper .seal-list-box {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 300px;
+    padding-right: 22px;
+    overflow-y: scroll;
+}
+.appoint-list, .grant-list, .seal-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    width: 278px;
+    padding: 0 30px 30px;
+}
+.appoint-list .seal-item, .grant-list .seal-item, .seal-list .seal-item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 90px;
+    margin-bottom: 20px;
+}
+.appoint-list .seal-item .seal-image, .grant-list .seal-item .seal-image, .seal-list .seal-item .seal-image {
+    cursor: pointer;
+    padding-top: 9px;
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+.appoint-list .seal-item .seal-name, .grant-list .seal-item .seal-name, .seal-list .seal-item .seal-name {
+    width: 100%;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #6a6f73;
+}
+.seal-btn-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    padding: 23px 0;
+    width: 100%;
+    border-top: 1px solid #e9e9e9;
+    background: #fff;
 }

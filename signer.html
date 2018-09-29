@@ -26,93 +26,365 @@
 	<body>
 	<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please upgrade your browser to improve your experience.</p><![endif]-->
     <!-- Start of Whole Site Wrapper with mobile menu support -->
-    <div id="whole" class="whole-site-wrapper color-scheme-one">
-      <!-- Start of Main Content Wrapper -->
-      <div id="content" class="main-content-wrapper">
-        <!-- Start of My Account Wrapper -->
-        <div class="my-account-wrapper">
-          <div class="contractContainer">  
-				<div class="main-dashboard">   
-					<div class="row">
-						<div class="col-12 col-sm-12 col-md-12 col-lg-2">
-						   <div class="form-group row align-items-center">
-							  <strong>&lt;&lt;返回</strong>
-							</div>
-							<div class="row align-items-center">
-							   <div class="col-12 col-md-12 col-lg-12">
-								<div class="feature-box type-2 media align-items-center item-active attachment"> 
-									<div class="feature-icon mr-4 mr-md-3 mr-lg-4">
-									  <i class="pe-7s-mail-open-file"></i>
-									 </div>
-									 <div class="feature-content media-body text-center"> 
-										<h2>我的合同</h2>  
-									 </div>
-								</div> 
-							   </div>  
-							   
-							   <div class="col-12 col-md-12 col-lg-12">
-								<div class="feature-box type-2 media align-items-center attachment"> 
-									<div class="feature-icon mr-4 mr-md-3 mr-lg-4">
-									  <i class="pe-7s-mail-open-file"></i>
-									 </div>
-									 <div class="feature-content media-body text-center"> 
-										<h2>我的合同1</h2>  
-									 </div>
-								</div> 
-							   </div> 
-							</div>
-						</div> 
-						
-						<div class="col-12 col-sm-12 col-md-12 col-lg-8">
-						  <!-- Tab panes -->
-							<div class="tab-content dashboard-content" id="signerContent" style="margin: 0px auto;background:#dfdfdf" ondragover="allowDrop(event)" ondrop="drop(event)">  
-								<div class="signer_page">1 / 1</div>
-								<div class="pagingSeal-box pagingSeal-transition">
-									<div  class="pagingSeal"></div> <div   class="pagingSeal-btn pagingSeal-set" style="">骑缝设置</div>
-								</div>
-							  <canvas id="signerCanvas" class="canvas" height="1094" width="774px" style="border:1px solid #ccc;margin:20px auto;display: block;text-align:center"></canvas>						  
-							</div>
-							
-							<!--上下-->
-							<div class="goto-wrapper">
-								<div  class="goto">
-									<div  class="goto-top">
-										<i class="font-size-50 pe-7s-angle-up"></i>
-									</div> 
-									<div class="goto-bottom">
-										<i class="font-size-50 pe-7s-angle-down"></i>
-									</div>
-								</div>
-							</div>
-							<!-- end of tab-pane --> 
-						</div> 
-						
-						<div class="col-12 col-sm-12 col-md-12 col-lg-2" style="min-height:500px">   
-							<div class="form-group row align-items-center">
-							  <strong>我的印章</strong>
-							</div>
-							<div class="form-group row align-items-center" id="signImgList">
-								 
-							</div> 
-							
-							<div class="form-group row align-items-center margin-top-50">
-								<div class="col-5 col-sm-5 col-md-5 text-center">
-									<span class="btn btn-customer-secondary padding-lr-20">暂不签署</span>
-								</div>
-								<div class="col-5 col-sm-5 col-md-5 text-center">
-									<span class="btn btn-customer-1  padding-lr-20" id="saveTemplateBtn">签署</span> 
-								</div> 
-							</div>  
-						</div>  
-						  <!-- end of row -->
-					</div> 
-				</div>
-            <!-- end of row --></div>
-          <!-- end of container --></div>
-        <!-- End of My Account Wrapper -->
+	<div  class="signer">
+   <div  class="sign-left-wrapper">
+    <div  class="sign-left"> 
+     <div class="goBack">
+      &lt;返回
+     </div> 
+     <div class="docList">
+      <div class="row">
+		   <div class="col-12 col-md-12 col-lg-12">
+			<div class="feature-box type-2 media align-items-center item-active attachment"> 
+				<div class="feature-icon mr-4 mr-md-3 mr-lg-4 default-color">
+				  <i class="pe-7s-mail-open-file"></i>
+				 </div>
+				 <div class="feature-content media-body text-center"> 
+					<h2>我的合同</h2>  
+				 </div>
+			</div> 
+		   </div>  
+		   
+		   <div class="col-12 col-md-12 col-lg-12">
+			<div class="feature-box type-2 media align-items-center attachment"> 
+				<div class="feature-icon mr-4 mr-md-3 mr-lg-4 default-color">
+				  <i class="pe-7s-mail-open-file"></i>
+				 </div>
+				 <div class="feature-content media-body text-center"> 
+					<h2>我的合同1</h2>  
+				 </div>
+			</div> 
+		   </div> 
+		</div>
+     </div> 
+     <div  class="docFlow" style="display: none;">
+      <i  class="iconfont sign-icon-flow"></i> 流程 
+     </div>
+    </div>
+   </div> 
+   <div  class="sign-content">
+    <div  class="batch-tip" style="display: none;">
+     请将印章拖拽至签署位置，其他所选合同都将在同一页码、同一位置加盖同一印章
+    </div> 
+    <div  class="pdfDoc">
+     <div  id="pdfPageBox" class="pdf-page-box" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <div  id="page-1" class="page" style="width: 774.15px;">
+       <div  class="pagingSeal-box pagingSeal-transition">
+        <div  class="pagingSeal"></div> 
+        <div  class="pagingSeal-btn pagingSeal-set" style="">
+         骑缝设置 
         </div>
-      <!-- End of Main Content Wrapper --> 
-	  </div>
+       </div> 
+       <div  class="pageContainer__page">
+        1 / 8
+       </div> 
+       <canvas  class="canvas" height="1094" width="774"></canvas>
+      </div>
+      <div  id="page-2" class="page" style="width: 774.15px;">
+       <div  class="pagingSeal-box pagingSeal-transition">
+        <div  class="pagingSeal"></div> 
+        <div  class="pagingSeal-btn pagingSeal-set" style="">
+         骑缝设置 
+        </div>
+       </div> 
+       <div  class="pageContainer__page">
+        2 / 8
+       </div> 
+       <canvas  class="canvas" height="1094" width="774"></canvas>
+      </div>
+      <div  id="page-3" class="page" style="width: 774.15px;">
+       <div  class="pagingSeal-box pagingSeal-transition">
+        <div  class="pagingSeal"></div> 
+        <div  class="pagingSeal-btn pagingSeal-set" style="">
+         骑缝设置 
+        </div>
+       </div> 
+       <div  class="pageContainer__page">
+        3 / 8
+       </div> 
+       <canvas  class="canvas" height="1094" width="774"></canvas>
+      </div>
+      <div  id="page-4" class="page" style="width: 774.15px;">
+       <div  class="pagingSeal-box pagingSeal-transition">
+        <div  class="pagingSeal"></div> 
+        <div  class="pagingSeal-btn pagingSeal-set" style="">
+         骑缝设置 
+        </div>
+       </div> 
+       <div  class="pageContainer__page">
+        4 / 8
+       </div> 
+       <canvas  class="canvas" height="1094" width="774"></canvas>
+      </div>
+      <div  id="page-5" class="page" style="width: 774.15px;">
+       <div  class="pagingSeal-box pagingSeal-transition">
+        <div  class="pagingSeal"></div> 
+        <div  class="pagingSeal-btn pagingSeal-set" style="">
+         骑缝设置 
+        </div>
+       </div> 
+       <div  class="pageContainer__page">
+        5 / 8
+       </div> 
+       <canvas  class="canvas" height="1094" width="774"></canvas>
+      </div>
+      <div  id="page-6" class="page" style="width: 774.15px;">
+       <div  class="pagingSeal-box pagingSeal-transition">
+        <div  class="pagingSeal"></div> 
+        <div  class="pagingSeal-btn pagingSeal-set" style="">
+         骑缝设置 
+        </div>
+       </div> 
+       <div  class="pageContainer__page">
+        6 / 8
+       </div> 
+       <canvas  class="canvas" height="1094" width="774"></canvas>
+      </div>
+      <div  id="page-7" class="page" style="width: 774.15px;">
+       <div  class="pagingSeal-box pagingSeal-transition">
+        <div  class="pagingSeal"></div> 
+        <div  class="pagingSeal-btn pagingSeal-set" style="">
+         骑缝设置 
+        </div>
+       </div> 
+       <div  class="pageContainer__page">
+        7 / 8
+       </div> 
+       <canvas  class="canvas" height="1094" width="774"></canvas>
+      </div>
+      <div  id="page-8" class="page" style="width: 774.15px;">
+       <div  class="pagingSeal-box pagingSeal-transition">
+        <div  class="pagingSeal"></div> 
+        <div  class="pagingSeal-btn pagingSeal-set" style="">
+         骑缝设置 
+        </div>
+       </div> 
+       <div  class="pageContainer__page">
+        8 / 8
+       </div> 
+       <canvas class="canvas" height="1094" width="774"></canvas>
+      </div>
+     </div>
+    </div> 
+    <div  class="sign-shortcut" style="display: none;"></div> 
+    <div  class="pagingSeal-btn pagingSeal-show" data="single">
+     骑缝签章 
+    </div> 
+    <div  class="goto-wrapper">
+     <div class="goto">
+      <div  class="goto-top">
+       <i  class="font-size-50 pe-7s-angle-up"></i>
+      </div> 
+      <div  class="goto-bottom">
+       <i  class="font-size-50 pe-7s-angle-down"></i>
+      </div>
+     </div>
+    </div> 
+    <div  class="guide-wrapper" style="display: none;">
+     <div  class="docBGimg">
+      <div  class="guide-bgimage3" style="display: none;"></div>
+     </div> 
+     <div  class="guide-layer">
+      <div  class="guide-menu-box">
+       <div  class="hidden-guide guide-menu-item">
+        关闭
+       </div> 
+       <div  class="nextStep guide-menu-item">
+        下一步
+       </div>
+      </div> 
+      <div  class="guide-bgimage1"></div> 
+      <div  class="guide-bgimage2"></div>
+     </div>
+    </div>
+   </div> 
+   <div  class="sign-right-wrapper">
+    <div  class="sign-right-seal">
+     <div class="seal-Tabbar">
+      <div class="sealTab-item sealTab-item-active">
+       我的印章 
+      </div>  
+     </div> 
+     <div class="seal-Tabbar" style="display: none;">
+      <div class="seal-Tabbar-appoint">
+       指定位置拖章
+      </div>
+     </div> 
+     <div class="seal-wrapper">
+      <div class="seal-doc" style="">
+        将印章拖拽至签署位置 
+      </div> 
+      <div class="seal-list-box">
+       <div class="seal-list">  
+       </div> 
+       <div class="grant-list" style="display: none;"> 
+        <div class="nosealData">
+          暂无授权印章 
+        </div>
+       </div>
+      </div> 
+      <div class="seal-list-appoint" style="display: none;">
+       <div class="appoint-list">
+        <div draggable="true" class="seal-item-appoint">
+         <div class="seal-item-appoint-text">
+           陈志雄 
+         </div> 
+         <div style="width: 100%;">
+          签章区
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>  
+     <div class="seal-btn-wrapper">
+      <button type="button" class="btn btn-customer-secondary padding-lr-20 margin-right-20">暂不签署</button> 
+      <button type="button" class="btn btn-customer-1  padding-lr-20">签署</button>
+     </div>
+    </div> 
+    <div  class="sign-right-preview" style="display: none;">
+     <div class="docInfo">
+      <div class="flow-status status-2" style=""></div> 
+      <div class="info-box">
+       <div class="item-row" style="">
+        <div class="row-title">
+         合同发起方
+        </div> 
+        <div class="row-text">
+         陈志雄
+        </div>
+       </div> 
+       <div class="item-row" style="">
+        <div class="row-title">
+         发起时间
+        </div> 
+        <div class="row-text">
+         2018-09-29 10:58:19
+        </div>
+       </div> 
+       <div class="item-row" style="display: none;">
+        <div class="row-title">
+         完成时间
+        </div> 
+        <div class="row-text"></div>
+       </div> 
+       <div class="item-row" style="display: none;">
+        <div class="row-title">
+         合同有效期
+        </div> 
+        <div class="row-text">
+          - 
+        </div>
+       </div> 
+       <div class="item-row" style="display: none;">
+        <div class="row-title">
+         备注
+        </div> 
+        <div class="row-text remark"></div>
+       </div>
+      </div>
+     </div> 
+     <div class="btn-box">
+      <!----> 
+      <!----> 
+      <!----> 
+      <!----> 
+      <!----> 
+      <button type="button" class="el-button sign-right-btn el-button--default">
+       <!---->
+       <!----><span>撤回 </span></button> 
+      <button type="button" class="el-button sign-right-btn el-button--default">
+       <!---->
+       <!----><span>拒绝签署 </span></button> 
+      <button type="button" class="el-button sign-right-btn el-button--default">
+       <!---->
+       <!----><span>转签 </span></button> 
+      <!----> 
+      <button type="button" class="el-button sign-right-btn sign-right-btn-active el-button--default">
+       <!---->
+       <!----><span>立即签署 </span></button>
+     </div>
+    </div>
+   </div> 
+   <!----> 
+   <!----> 
+   <!----> 
+   <!----> 
+   <!----> 
+   <div  class="el-dialog__wrapper" style="display: none;">
+    <div class="el-dialog pagingSealSet-dialog" style="margin-top: 15vh;">
+     <div class="el-dialog__header">
+      <span class="el-dialog__title">骑缝设置</span>
+      <button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button>
+     </div>
+     <!---->
+     <div class="el-dialog__footer">
+      <div  class="pagingSealSet-dialog-footer">
+       <button  type="button" class="el-button el-button--default">
+        <!---->
+        <!----><span>取 消</span></button> 
+       <button  type="button" class="el-button el-button--primary">
+        <!---->
+        <!----><span>确认</span></button>
+      </div>
+     </div>
+    </div>
+   </div> 
+   <div  class="el-dialog__wrapper" style="display: none;">
+    <div class="el-dialog myDoc-dialog" style="margin-top: 15vh;">
+     <div class="el-dialog__header">
+      <span  class="el-dialog__title">转签 <span >添加联系人</span></span>
+      <button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button>
+     </div>
+     <!---->
+     <div class="el-dialog__footer">
+      <div  class="dialog-footer">
+       <button  type="button" class="el-button el-button--default el-button--small">
+        <!---->
+        <!----><span>取消</span></button> 
+       <button  type="button" class="el-button el-button--primary el-button--small">
+        <!---->
+        <!----><span>确定</span></button>
+      </div>
+     </div>
+    </div>
+   </div> 
+   <div  class="el-dialog__wrapper" style="display: none;">
+    <div class="el-dialog myDoc-dialog reject-dialog" style="margin-top: 15vh;">
+     <div class="el-dialog__header">
+      <span  class="el-dialog__title">拒签 <span >填写拒签原因</span></span>
+      <button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button>
+     </div>
+     <!---->
+     <div class="el-dialog__footer">
+      <div  class="dialog-footer">
+       <button  type="button" class="el-button el-button--default el-button--small">
+        <!---->
+        <!----><span>取消</span></button> 
+       <button  type="button" class="el-button el-button--primary el-button--small">
+        <!---->
+        <!----><span>确定 </span></button> 
+       <!---->
+      </div>
+     </div>
+    </div>
+   </div> 
+   <div  class="el-dialog__wrapper" style="display: none;">
+    <div class="el-dialog myDoc-dialog reject-dialog" style="margin-top: 15vh;">
+     <div class="el-dialog__header">
+      <span  class="el-dialog__title">拒签原因</span>
+      <button type="button" aria-label="Close" class="el-dialog__headerbtn"><i class="el-dialog__close el-icon el-icon-close"></i></button>
+     </div>
+     <!---->
+     <div class="el-dialog__footer">
+      <div  class="dialog-footer">
+       <button  type="button" class="el-button el-button--primary el-button--small">
+        <!---->
+        <!----><span>确定</span></button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
     <!-- End of Whole Site Wrapper --> 
     <!-- JS============================================- -><!-- jQuery JS -->
     <script src="assets/js/jquery.1.12.4.min.js"></script> 
