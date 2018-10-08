@@ -2401,6 +2401,7 @@ body .bgc-dark,body .default-btn:hover,body .default-btn:focus,body #to_top,body
 }
 .comments-area .comment-content {
 	padding:20px;
+	margin: 0px 20px 0px 0px;
 }
 .comments-area .comment-content >p {
 	margin-top:10px;
@@ -3387,7 +3388,7 @@ header.header-type-2 .header-cart-area .dropdown-toggle .cart-text {
 	bottom:0;
 	right:0;
 	border-radius: 4px;
-	height:250px;
+	min-height:250px;
 	left:50%;
     -webkit-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
