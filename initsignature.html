@@ -1,345 +1,344 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>发起签署</title>
-    <meta name="description" content="">
-    <meta name="robots" content="noindex, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- favicon============================================-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>发起签署</title>
+	<meta name="description" content="">
+	<meta name="robots" content="noindex, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- favicon============================================-->
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 	<!-- CSS files    ============================================ -->
-    <!-- Boostrap stylesheet -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="assets/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
-    <!-- Plugins stylesheet -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    <!-- Master stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Responsive stylesheet -->
-    <link rel="stylesheet" href="assets/css/responsive.css"> 
-	<script src="assets/js/modernizr-2.8.3.min.js"></script></head>
-	<body>
+	<!-- Boostrap stylesheet -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Icon Font CSS -->
+	<link rel="stylesheet" href="assets/css/ionicons.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
+	<!-- Plugins stylesheet -->
+	<link rel="stylesheet" href="assets/css/plugins.css">
+	<!-- Master stylesheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Responsive stylesheet -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<script src="assets/js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
 	<!--[if lt IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong>browser. Please upgrade your browser to improve your experience.</p><![endif]-->
-    <!-- Start of Whole Site Wrapper with mobile menu support -->
-    <div id="whole" class="whole-site-wrapper color-scheme-one">
-      <!-- Start of Header -->
-      <header class="header bgc-white inner-header">
-        <div class="header-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-3 align-self-center">
-                <div class="logo">
-                  <a href="index.html">
-                    <img src="assets/images/logo.png" alt="Logo" class="logo"></a>
-                </div>
-              </div>
-              <div class="col-12 col-sm-12 col-md-12 col-lg-9"> 
-                <!-- end of top-header -->
-                <div class="bottom-header">
-                  <div class="row align-items-center">
-                    <div class="col-12 col-sm-12 col-md-7 col-lg-9 text-right"> <a class="btn btn-customer-1" href="initsignature.html">+发起签署</a></div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-3 text-left"> 
-                        <div class="header-cart"> 
-                          <div class="user-info">
-							<p class="user-name">剩余套餐:&nbsp;<a href="accountMgt.html" class="default-color">1</a>&nbsp;次
-							<br>
-                              <span>陈志雄</span>
-                              [<a class="log-out" href="login.html">退出</a>]
-							</p>  
-                          </div>
-                        </div> 
-                    </div>
-                  </div>
-                </div>
-                <!-- end of bottom-header --></div>
-            </div>
-            <!-- end of row --></div>
-          <!-- end of container --></div>
-        <!-- end of header-area -->
-        <!-- Start of Main and Mobile Navigation -->
-        <div class="main-nav-area">
-          <div class="container">
-            <nav id="main_nav" class="stellarnav">
-              <ul class="text-left">
-				<li>
-				  <a href="account-index.html">
-					<span>账户首页</span></a> 
-				</li>
-				<li>
-					<a href="setmeal.html">
-					  <span>套餐中心</span></a> 
-				  </li>
-				<li>
-				  <a href="myht.html">
-					<span>我的合同</span></a> 
-				  </li>
-				  <li>
-					<a href="mymb.html">
-					  <span>合同模板</span></a> 
-				  </li>
-				  <li>
-					<a href="accountMgt.html">
-					  <span>账户管理</span></a> 
-				  </li>
-				  <li>
-					<a href="usercenter.html">
-					  <span>用户中心</span></a> 
-				  </li> 
-              </ul>
-            </nav>
-          </div>
-          <!-- end of container --></div>
-        <!-- End of Main and Mobile Navigation --></header>
-      <!-- End of Header -->
-      <div class="fixed-header-space"></div>
-      <!-- empty placeholder div for Fixed Menu bar height-->
-       
-      <!-- Start of Main Content Wrapper -->
-      <div id="content" class="main-content-wrapper">
-        <!-- Start of My Account Wrapper -->
-        <div class="my-account-wrapper">
-          <div class="container">  
-				<div class="main-dashboard">   
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-4 col-sm-4 col-md-2 col-form-label text-right">合同名称：</label>
-					  <div class="col-2 col-sm-2 col-md-6">
-						<input type="text" class="form-control" id="c-account" placeholder="合同主题" required=""></div> 
-				    </div>
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-2 col-sm-2 col-md-2 col-form-label text-right">合同有效期：</label>
-					  <div class="col-4 col-sm-4 col-md-4">
-						<input type="text" class="form-control" id="c-account" placeholder="开始日期" required="">
-					  </div> 
-					  <div class="col-4 col-sm-4 col-md-4">
-						<input type="text" class="form-control" id="c-account" placeholder="结束日期" required="">
-					  </div> 
-				    </div>
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-2 col-sm-2 col-md-2 col-form-label text-right">签署结束期：</label>
-					  <div class="col-4 col-sm-4 col-md-4">
-						<input type="text" class="form-control" id="c-account" placeholder="选择日期" required="">
-					  </div>  
-					  <div class="col-4 col-sm-4 col-md-4">
-						所有签署方需在截止日期前完成签署
-					  </div>
-				    </div>
-					
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-2 col-sm-2 col-md-2 col-form-label text-right">备注：</label>
-					  <div class="col-10 col-sm-10 col-md-10">
-						<input type="text" class="form-control" id="c-account" placeholder="注意事项" required=""></div> 
-				    </div> 
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-2 col-sm-2 col-md-2 col-form-label text-right">签署模式：</label>
-					  <div class="col-4 col-sm-4 col-md-4">
-						<select class="form-control">
+	<!-- Start of Whole Site Wrapper with mobile menu support -->
+	<div id="whole" class="whole-site-wrapper color-scheme-one">
+		<!-- Start of Header -->
+		<header class="header bgc-white inner-header">
+			<div class="header-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-3 align-self-center">
+							<div class="logo">
+								<a href="index.html">
+                    <img src="assets/images/logo12.png" alt="Logo" class="logo"></a>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-9">
+							<!-- end of top-header -->
+							<div class="bottom-header">
+								<div class="row align-items-center">
+									<div class="col-12 col-sm-12 col-md-7 col-lg-9 text-right"> <a class="btn btn-customer-1" href="initsignature.html">
+										＋&nbsp;发起签署</a></div>
+									<div class="col-12 col-sm-12 col-md-5 col-lg-3 text-left">
+										<div class="header-cart">
+											<div class="user-info">
+												<p class="user-name">剩余套餐:&nbsp;<a href="accountMgt.html" class="default-color"><strong>20</strong></a>&nbsp;次
+													<br>
+													<span>陈志雄</span> [
+													<a class="log-out" href="login.html">退出</a>]
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end of bottom-header -->
+						</div>
+					</div>
+					<!-- end of row -->
+				</div>
+				<!-- end of container -->
+			</div>
+			<!-- end of header-area -->
+			<!-- Start of Main and Mobile Navigation -->
+			<div class="main-nav-area">
+				<div class="container">
+					<nav id="main_nav" class="stellarnav">
+						<ul class="text-left">
+              <li>
+                <a href="account-index.html">
+                    <span>我的签署</span></a>
+              </li>
+              <li>
+                <a href="myht.html">
+                    <span>我的合同</span></a>
+              </li>
+              <li>
+                <a href="mymb.html">
+                      <span>我的模板</span></a>
+              </li>
+              <li>
+                <a href="usercenter.html">
+                      <span>我的信息</span></a>
+              </li>
+              <li>
+                <a href="accountMgt.html">
+                      <span>我的账户</span></a>
+              </li>
+              <li>
+                <a href="setmeal.html">
+					  <span>套餐中心</span></a>
+              </li>
+            </ul>
+					</nav>
+				</div>
+				<!-- end of container -->
+			</div>
+			<!-- End of Main and Mobile Navigation -->
+		</header>
+		<!-- End of Header -->
+		<div class="fixed-header-space"></div>
+		<!-- empty placeholder div for Fixed Menu bar height-->
+
+		<!-- Start of Main Content Wrapper -->
+		<div id="content" class="main-content-wrapper">
+			<!-- Start of My Account Wrapper -->
+			<div class="my-account-wrapper">
+				<div class="container">
+					<div class="main-dashboard">
+						<div class="form-group row align-items-center">
+							<label class="col-4 col-sm-4 col-md-2 col-form-label text-right text-weight">合同名称：</label>
+							<div class="col-2 col-sm-2 col-md-6">
+								<input type="text" class="form-control" id="c-account" placeholder="合同主题" required="" value=""></div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-2 col-sm-2 col-md-2 col-form-label text-right text-weight">合同有效期：</label>
+							<div class="col-4 col-sm-4 col-md-4">
+								<input type="text" class="form-control" id="c-account" placeholder="开始日期" required="">
+							</div>
+							<div class="col-4 col-sm-4 col-md-4">
+								<input type="text" class="form-control" id="c-account" placeholder="结束日期" required="">
+							</div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-2 col-sm-2 col-md-2 col-form-label text-right text-weight">签署结束期：</label>
+							<div class="col-4 col-sm-4 col-md-4">
+								<input type="text" class="form-control" id="c-account" placeholder="选择日期" required="">
+							</div>
+							<div class="col-4 col-sm-4 col-md-4 text-weight">
+								所有签署方需在截止日期前完成签署
+							</div>
+						</div>
+
+
+						<div class="form-group row align-items-center">
+							<label class="col-2 col-sm-2 col-md-2 col-form-label text-right text-weight">备注：</label>
+							<div class="col-10 col-sm-10 col-md-10">
+								<input type="text" class="form-control" id="c-account" placeholder="注意事项" required=""></div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-2 col-sm-2 col-md-2 col-form-label text-right text-weight">签署模式：</label>
+							<div class="col-4 col-sm-4 col-md-4">
+								<select class="form-control">
 						  <option value="1">无序签署</option>
 						  <option value="2">顺序签署</option>
 						  <option value="3">单独签署</option> 
 						</select>
-					  </div>   
-				    </div>
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-2 col-sm-2 col-md-2 col-form-label text-right">付费方式：</label>
-					  <div class="col-4 col-sm-4 col-md-4">
-						<select class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-2 col-sm-2 col-md-2 col-form-label text-right text-weight">付费方式：</label>
+							<div class="col-4 col-sm-4 col-md-4">
+								<select class="form-control">
 						  <option value="1">全部自己付：我来承担此次文件的签署费用</option>
 						  <option value="2">各自付：由文件签署人各自承担签署费用</option>
 						  <option value="3">全部对方付：由收件方承担此次文件的签署费用</option> 
 						</select>
-					  </div>   
-				    </div>
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-2 col-sm-2 col-md-2 col-form-label text-right">是否需要实名认证：</label>
-					  <div class="col-2 col-sm-2 col-md-2">
-						<select class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-2 col-sm-2 col-md-2 col-form-label text-right text-weight">是否需要实名认证：</label>
+							<div class="col-2 col-sm-2 col-md-2">
+								<select class="form-control">
 						  <option value="1">是</option>
 						  <option value="2">否</option> 
 						</select>
-					  </div>   
-				    </div>
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-2 col-sm-2 col-md-2 col-form-label text-right">是否指定签署位置：</label>
-					  <div class="col-2 col-sm-2 col-md-2">
-						<select class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-2 col-sm-2 col-md-2 col-form-label text-right text-weight">是否指定签署位置：</label>
+							<div class="col-2 col-sm-2 col-md-2">
+								<select class="form-control">
 						  <option value="2">否</option> 
 						  <option value="1">是</option> 
 						</select>
-					  </div>   
-				    </div>
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-2 col-sm-2 col-md-2 col-form-label text-right"><strong>选择签署人：</strong></label>
-					  <div class="col-4 col-sm-4 col-md-4">
-						<a class="btn btn-customer-1" href="initsignature.html">+添加联系人</a>
-					  </div>   
-				    </div>
-					
-					<div class="form-group row align-items-center mb-4">
-						<label class="col-1 col-sm-1 col-md-1 col-form-label text-right">&nbsp;</label>
-						<div class="col-11 col-sm-11 col-md-11">
-							<table class="table">
-							  <thead>
-								<tr>
-								  <th>姓名</th>
-								  <th>手机号/邮箱</th>
-								  <th>签署方认证等级</th>
-								  <th>是否需要签署</th> 
-								  <th>操作</th>
-								</tr>
-							  </thead>
-							  <tbody>
-								<tr>
-								  <td>陈志雄</td>
-								  <td>1323323233</td>
-								  <td>安全</td> 
-								  <td>
-									<select class="form-control">
+							</div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-2 col-sm-2 col-md-2 col-form-label text-right text-weight"><strong>选择签署人：</strong></label>
+							<div class="col-4 col-sm-4 col-md-4">
+								<a class="btn btn-customer-1 w120" href="initsignature.html text-weight">+&nbsp;添加联系人</a>
+							</div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-1 col-sm-1 col-md-1 col-form-label text-right">&nbsp;</label>
+							<div class="col-11 col-sm-11 col-md-11">
+								<table class="table table-bordered">
+									<thead class="thead-light">
+										<tr>
+											<th>姓名</th>
+											<th>手机号/邮箱</th>
+											<th>签署方认证等级</th>
+											<th>是否需要签署</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>陈志雄</td>
+											<td>1323323233</td>
+											<td>安全</td>
+											<td>
+												<select class="form-control w200">
 									  <option value="1">需要签署</option>
 									  <option value="2">仅抄送</option> 
 									</select>
-								  </td>
-								  <td> 
-									<a class="btn btn-secondary" href="#">删除</a>
-								  </td>
-								</tr>
-								<tr>
-								  <td>陈志雄</td>
-								  <td>1323323233</td>
-								  <td>安全</td> 
-								  <td>
-									<select class="form-control">
+											</td>
+											<td>
+												<a class="btn btn-outline-danger btn-sm w80 h31" href="#">删  除</a>
+											</td>
+										</tr>
+										<tr>
+											<td>陈志雄</td>
+											<td>1323323233</td>
+											<td>安全</td>
+											<td>
+												<select class="form-control w200">
 									  <option value="1">需要签署</option>
 									  <option value="2">仅抄送</option> 
 									</select>
-								  </td>
-								  <td> 
-									<a class="btn btn-secondary" href="#">删除</a>
-								  </td>
-								</tr>
-							  </tbody> 
-							</table> 
-						  </div>
+											</td>
+											<td>
+												<a class="btn btn-outline-danger btn-sm w80 h31" href="#">删  除</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-2 col-sm-2 col-md-2 col-form-label text-right text-weight"><strong>合同附件：</strong></label>
+							<div class="col-4 col-sm-4 col-md-4">
+								<a class="btn btn-customer-1 w120" href="initsignature.html">+&nbsp;添加合同附件</a>
+							</div>
+						</div>
+
+						<div class="form-group row align-items-center">
+							<label class="col-1 col-sm-1 col-md-1 col-form-label text-right">&nbsp;</label>
+							<div class="col-11 col-sm-11 col-md-11">
+								<div class="row margin-top-20">
+									<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+										<article class="blog-post post-entry">
+											<div class="blog-grid">
+												<div class="content-wrapper">
+													<div class="post-media">
+														<img src="assets/images/template.png" style="height:200px;width:100%">
+													</div>
+													<div class="post-content">
+														<h3 class="post-title">共5页</h3>
+														<button type="button" class="btn btn-outline-danger btn-sm w80 mt20 h31">删  除</button>
+														<button type="button" class="btn btn-outline-primary btn-sm w80 mt20 h31">重命名</button>
+													</div>
+													<div class="post-footer">
+														我的合同
+													</div>
+												</div>
+											</div>
+											<!-- end of blog-grid -->
+										</article>
+										<!-- end of blog-post -->
+									</div>
+
+									<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+										<article class="blog-post post-entry">
+											<div class="blog-grid">
+												<div class="content-wrapper">
+													<div class="post-media"> <img src="assets/images/template.png" style="height:200px;width:100%">
+													</div>
+													<div class="post-content">
+														<h3 class="post-title">共5页</h3>
+														<button type="button" class="btn btn-outline-danger btn-sm w80 mt20 h31">删  除</button>
+														<button type="button" class="btn btn-outline-primary btn-sm w80 mt20 h31">重命名</button>
+													</div>
+													<div class="post-footer">
+														我的合同
+													</div>
+												</div>
+											</div>
+											<!-- end of blog-grid -->
+										</article>
+										<!-- end of blog-post -->
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group row align-items-center mb-4">
+
+						</div>
 					</div>
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-2 col-sm-2 col-md-2 col-form-label text-right"><strong>合同附件：</strong></label>
-					  <div class="col-4 col-sm-4 col-md-4">
-						<a class="btn btn-customer-1" href="initsignature.html">+添加合同附件</a>
-					  </div>   
-				    </div>
-					
-					<div class="form-group row align-items-center mb-4">
-					  <label class="col-1 col-sm-1 col-md-1 col-form-label text-right">&nbsp;</label>
-					  <div class="col-11 col-sm-11 col-md-11">
-						<div class="row margin-top-20"> 
-							<div class="col-12 col-sm-12 col-md-4 col-lg-4">
-							   <article class="blog-post post-entry">
-								<div class="blog-grid">
-								 <div class="content-wrapper">
-								  <div class="post-media">
-								   <img src="assets/images/template.png" style="height:200px;width:100%">
-								  </div>
-								  <div class="post-content"> 
-								   <h3 class="post-title">共5页</h3>  
-								   <div class="tags-widget">
-										<ul> 
-											<li><a href="#">删除</a></li>
-											<li><a href="#">重命名</a></li>
-										</ul>
-									</div>
-								  </div>
-								  <div class="post-footer">
-								   我的合同
-								  </div>
-								 </div>
-								</div>
-								<!-- end of blog-grid -->
-							   </article>
-							   <!-- end of blog-post -->
-							  </div> 
-							  
-							  <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-							   <article class="blog-post post-entry">
-								<div class="blog-grid">
-								 <div class="content-wrapper">
-								  <div class="post-media"> <img src="assets/images/template.png"  style="height:200px;width:100%"> 
-								  </div>
-								  <div class="post-content"> 
-								   <h3 class="post-title">共5页</h3>  
-								   <div class="tags-widget">
-										<ul> 
-											<li><a href="#">删除</a></li>
-											<li><a href="#">重命名</a></li>
-										</ul>
-									</div>
-								  </div>
-								  <div class="post-footer">
-								   我的合同
-								  </div>
-								 </div>
-								</div>
-								<!-- end of blog-grid -->
-							   </article>
-							   <!-- end of blog-post -->
-							  </div>
-						  </div>
-					  </div>   
-				    </div>
-					
-					<div class="form-group row align-items-center mb-4"> 
-					  <div class="col-12 col-sm-12 col-md-12 text-center">
-						<span class="btn btn-customer-secondary margin-right-20 padding-lr-50 padding-bt-10">下一步</span>
-						<span class="btn btn-customer-1 padding-lr-50 padding-bt-10" id="nextStep">下一步</span>
-					  </div>   
-				    </div>
+					<!-- end of row -->
 				</div>
-            <!-- end of row --></div>
-          <!-- end of container --></div>
-        <!-- End of My Account Wrapper -->
-        </div>
-      <!-- End of Main Content Wrapper -->
-      <!-- Start of Footer -->
-      <footer id="colophon" class="fixed-footer">
-        <!-- Footer Widgets Area -->  
-        <!-- Footer Copyright -->
-        <div class="footer-copyright">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                <p class="copyright-text">Copyright © 2018
-                  <a href="http://www.bootstrapmb.com/" rel="nofollow">南创博信</a>. All Right Reserved.</p></div> 
-            </div>
-            <!-- end of row --></div>
-          <!-- end of container --></div>
-        <!-- end of footer-copyright --></footer>
-      <!-- End of Footer --> 
-	  </div>
-    <!-- End of Whole Site Wrapper --> 
-    <!-- JS============================================- -><!-- jQuery JS -->
-    <script src="assets/js/jquery.1.12.4.min.js"></script>
-    <!-- Popper JS -->
-    <script src="assets/js/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Plugins JS -->
-    <script src="assets/js/plugins.js"></script>
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+				<!-- end of container -->
+			</div>
+			<!-- End of My Account Wrapper -->
+		</div>
+		<!-- End of Main Content Wrapper -->
+		<!-- Start of Footer -->
+		<footer id="colophon" class="fixed-footer">
+			<!-- Footer Widgets Area -->
+			<!-- Footer Copyright -->
+			<div class="footer-copyright">
+				<div class="col-12 col-sm-12 col-md-12 text-center">
+					<span class="btn btn-outline-dark margin-right-20 w200">取 消</span>
+					<span class="btn btn-customer-1 w200" id="nextStep">下一步</span>
+				</div>
+
+				<!-- end of container -->
+			</div>
+			<!-- end of footer-copyright -->
+		</footer>
+		<!-- End of Footer -->
+	</div>
+	<!-- End of Whole Site Wrapper -->
+	<!-- JS============================================- -><!-- jQuery JS -->
+	<script src="assets/js/jquery.1.12.4.min.js"></script>
+	<!-- Popper JS -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Plugins JS -->
+	<script src="assets/js/plugins.js"></script>
+	<!-- Main JS -->
+	<script src="assets/js/main.js"></script>
 	<script src="assets/js/initsignature.js"></script>
-    </body>
+</body>
 
 </html>

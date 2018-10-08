@@ -13,7 +13,7 @@ $(function () {
             }
 	}
 	
-	var itemData = [{"itemNum":1,"inputItemName":"甲方姓名","x":"300","y":"200","fontFamily":"宋体","fontSize":"14px"}];
+	var itemData = [{"itemNum":1,"inputItemName":"甲方姓名","x":"300","y":"200","fontFamily":"Microsoft YaHei","fontSize":"16px"}];
 	var initData = function(){
 		for(var i=0;i<itemData.length;i++){
 			/**
@@ -27,8 +27,8 @@ $(function () {
 			/**
 			 * 添加项
 			 */
-			$('#templateItemList').append('<div class="row col-12 col-sm-12 col-md-12 margin-top-20" id="item_'+itemData[i].itemNum+'">'+
-											'<label class="col-2 col-sm-2 col-md-2 col-form-label text-center"><span class="item_num">'+itemData[i].itemNum+'</span></label>'+
+			$('#templateItemList').append('<div class="row col-12 col-sm-12 col-md-12" id="item_'+itemData[i].itemNum+'">'+
+											'<label class="col-2 col-sm-2 col-md-2 col-form-label text-center text-sz"><span class="item_num">'+itemData[i].itemNum+'</span></label>'+
 											'<div class="col-8 col-sm-8 col-md-8">'+
 											'	<input type="text" class="form-control inputItemName" data-item="'+itemData[i].itemNum+'" id="inputItemName'+itemData[i].itemNum+'" value="'+itemData[i].inputItemName+'" name="inputItemName" placeholder="输入项名称" required>'+
 											'</div>'+

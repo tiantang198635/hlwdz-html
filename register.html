@@ -1,112 +1,115 @@
 <!DOCTYPE html>
-<html lang="zxx"> 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>注册</title>
-    <meta name="description" content="">
-    <meta name="robots" content="noindex, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-	<!-- CSS files    ============================================ -->
-    <!-- Boostrap stylesheet -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="assets/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
-    <!-- Plugins stylesheet -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    <!-- Master stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Responsive stylesheet -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- modernizr JS============================================-->
-	<script src="assets/js/modernizr-2.8.3.min.js"></script>
-  </head>
-  <body style="background:url(assets/images/bg_login.jpg)"> 
-    <!-- Start of Whole Site Wrapper with mobile menu support -->
-    <div id="whole" class="whole-site-wrapper color-scheme-one"> 
-      <div class="fixed-header-space"></div>
-      <!-- empty placeholder div for Fixed Menu bar height-->
-       
-      <!-- Start of Main Content Wrapper -->
-      <div id="content" class="main-content-wrapper">
-        <!-- Start of Login Wrapper -->
-        <div class="login-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <main id="primary" class="site-main">
-                  <div class="user-login"> 
-                    <!-- end of row -->
-                    <div class="row">
-                      <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-6 offset-lg-2 offset-xl-3">
-                        <div class="login-form mt-half">
-                          <form id="register-form" role="form" class="form-horizontal">
-							<div class="form-group align-items-center mb-4 text-center primary-color" id="errorInfo"> 
-							</div>
-                            <div class="form-group row align-items-center mb-4">
-                              <label for="account" class="col-12 col-sm-12 col-md-4 col-form-label">账号</label>
-                              <div class="col-12 col-sm-12 col-md-8">
-                                <input type="text" class="form-control" id="account" name="account" placeholder="请输入账号" required></div>
-                            </div>
-                            <div class="form-group row align-items-center mb-4">
-                              <label for="pwd" class="col-12 col-sm-12 col-md-4 col-form-label">密码</label>
-                              <div class="col-12 col-sm-12 col-md-8">
-                                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="请输入长度大于6的密码" required> 
-							  </div>
-							</div>
-							<div class="form-group row align-items-center mb-4">
-                              <label for="cpassword" class="col-12 col-sm-12 col-md-4 col-form-label">确认密码</label>
-                              <div class="col-12 col-sm-12 col-md-8">
-                                <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="请重复输入密码" required> 
-                              </div>
-							</div>
-							<!--<div class="form-group row align-items-center mb-4">
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>注册</title>
+  <meta name="description" content="">
+  <meta name="robots" content="noindex, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <!-- CSS files    ============================================ -->
+  <!-- Boostrap stylesheet -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Icon Font CSS -->
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
+  <!-- Plugins stylesheet -->
+  <link rel="stylesheet" href="assets/css/plugins.css">
+  <!-- Master stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Responsive stylesheet -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- modernizr JS============================================-->
+  <script src="assets/js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body style="background:url(assets/images/bg_login.jpg)">
+  <!-- Start of Whole Site Wrapper with mobile menu support -->
+  <div id="whole-bg" class="whole-site-wrapper color-scheme-one">
+    <div class="fixed-header-space"></div>
+    <!-- empty placeholder div for Fixed Menu bar height-->
+
+    <!-- Start of Main Content Wrapper -->
+    <div id="content" class="main-content-wrapper">
+      <!-- Start of Login Wrapper -->
+      <div class="login-wrapper">
+        <div class="container">
+          <div class="row">
+            <main id="primary" class="site-main">
+              <div class="user-login">
+                <!-- end of row -->
+                <div class="login-form mt-half">
+                  <form id="register-form" role="form" class="form-horizontal">
+                    <div class="logo">
+                      <a href="index.html">
+                               <img src="assets/images/logo12.png" alt="Logo" class="logo"></a>
+                    </div>
+                    <div class="form-group align-items-center mb-4 text-center primary-color" id="errorInfo">
+                    </div>
+                    
+                    <div class="form-inline mt20 ml10">
+                      <label for="account" class="col-form-label w80 lable-right">账号</label>
+                      <input type="text" class="form-control ml10 w250" id="account" name="account" placeholder="输入账号名称" required>
+                    </div>
+                    <div class="form-inline mt10 ml10">
+                      <label for="pwd" class="col-form-label w80 lable-right">密码</label>
+                      <input type="password" class="form-control ml10 w250" id="pwd" name="pwd" placeholder="输入密码" required>
+                    </div>
+                    <div class="form-inline mt10 ml10">
+                      <label for="pwd" class="col-form-label w80 lable-right">确认密码</label>
+                      <input type="password" class="form-control ml10 w250" id="pwd" name="pwd" placeholder="请重复输入密码" required>
+                    </div>
+                    <!--<div class="form-group row align-items-center mb-4">
                               <label for="c-password" class="col-12 col-sm-12 col-md-4 col-form-label">验证码</label>
                               <div class="col-12 col-sm-12 col-md-8">
                                 <input type="password" class="form-control" id="c-password" placeholder="Password" required> 
                             </div>-->
-                            <div class="login-box mt-5 text-center"> 
-								<p><a href="#">《e签宝注册协议》</a>|<a href="#">《e签宝隐私协议》</a></p>
-                              <button type="submit" class="default-btn big-btn mt-4" id="submitBtn">注册</button>
-							</div>
-							<div class="text-center mt-half pt-half top-bordered">
-                              <p>已有账号?
-                                <a href="login.html">点击登录</a>.</p></div>							
-                          </form>
-                        </div>
-                      </div>
+                    <div class="login-box mt10 text-center">
+                      <p><a href="#">《e签宝注册协议》</a>|<a href="#">《e签宝隐私协议》</a></p>
+                      <button type="submit" class="btn btn-danger mt-4 w300 ml10" id="submitBtn">注册</button>
                     </div>
-                  </div>
-                  <!-- end of user-login --></main>
-                <!-- end of #primary --></div>
-            </div>
-            <!-- end of row --></div>
-          <!-- end of container --></div>
-        <!-- End of Login Wrapper -->
-         </div>
-      <!-- End of Main Content Wrapper --> 
-      <!-- Start of Scroll to Top --> 
-      <!-- End of Scroll to Top --></div>
-    <!-- End of Whole Site Wrapper -->
-    <!-- Initializing Photoswipe --> 
-    <!-- End of Photoswipe -->
-    <!-- JS============================================- ->
+                    <div class="text-center mt-half pt-half top-bordered">
+                      <p>已有账号?
+                        <a href="login.html">点击<span style="color:#f13a3a"><strong>登录</strong></span></a>.</p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- end of user-login -->
+            </main>
+            <!-- end of #primary -->
+
+          </div>
+          <!-- end of row -->
+        </div>
+        <!-- end of container -->
+      </div>
+      <!-- End of Login Wrapper -->
+    </div>
+    <!-- End of Main Content Wrapper -->
+    <!-- Start of Scroll to Top -->
+    <!-- End of Scroll to Top -->
+  </div>
+  <!-- End of Whole Site Wrapper -->
+  <!-- Initializing Photoswipe -->
+  <!-- End of Photoswipe -->
+  <!-- JS============================================- ->
 	<!-- jQuery JS -->
-    <script src="assets/js/jquery.1.12.4.min.js"></script>
-	<script src="assets/js/jquery.validate.min.js"></script>
-    <!-- Popper JS -->
-    <script src="assets/js/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Plugins JS -->
-    <script src="assets/js/plugins.js"></script>
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
-	<script src="assets/js/global.js"></script>
-	<script src="assets/js/register.js"></script>
-    </body>
+  <script src="assets/js/jquery.1.12.4.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <!-- Popper JS -->
+  <script src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Plugins JS -->
+  <script src="assets/js/plugins.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/global.js"></script>
+  <script src="assets/js/register.js"></script>
+</body>
 
 </html>

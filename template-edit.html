@@ -32,33 +32,35 @@
       <header class="header bgc-white inner-header">
         <div class="header-area">
           <div class="container">
-            <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-3 align-self-center">
-                <div class="logo">
-                  <a href="index.html">
-                    <img src="assets/images/logo.png" alt="Logo" class="logo"></a>
-                </div>
+           <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 align-self-center">
+              <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo12.png" alt="Logo" class="logo"></a>
               </div>
-              <div class="col-12 col-sm-12 col-md-12 col-lg-9"> 
-                <!-- end of top-header -->
-                <div class="bottom-header">
-                  <div class="row align-items-center">
-                    <div class="col-12 col-sm-12 col-md-7 col-lg-9 text-right"> <a class="btn btn-customer-1" href="initsignature.html">+发起签署</a></div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-3 text-left"> 
-                        <div class="header-cart"> 
-                          <div class="user-info">
-							<p class="user-name">剩余套餐:&nbsp;<a href="accountMgt.html" class="default-color">1</a>&nbsp;次
-							<br>
-                              <span>陈志雄</span>
-                              [<a class="log-out" href="login.html">退出</a>]
-							</p>  
-                          </div>
-                        </div> 
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+              <!-- end of top-header -->
+              <div class="bottom-header">
+                <div class="row align-items-center">
+                  <div class="col-12 col-sm-12 col-md-7 col-lg-9 text-right"> <a class="btn btn-customer-1" href="initsignature.html">
+										＋&nbsp;发起签署</a></div>
+                  <div class="col-12 col-sm-12 col-md-5 col-lg-3 text-left">
+                    <div class="header-cart">
+                      <div class="user-info">
+                        <p class="user-name">剩余套餐:&nbsp;<a href="accountMgt.html" class="default-color"><strong>20</strong></a>&nbsp;次
+                          <br>
+                          <span>陈志雄</span> [
+                          <a class="log-out" href="login.html">退出</a>]
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- end of bottom-header --></div>
+              </div>
+              <!-- end of bottom-header -->
             </div>
+          </div>
             <!-- end of row --></div>
           <!-- end of container --></div>
         <!-- end of header-area -->
@@ -67,31 +69,31 @@
           <div class="container">
             <nav id="main_nav" class="stellarnav">
               <ul class="text-left">
-				<li>
-				  <a href="account-index.html">
-					<span>账户首页</span></a> 
-				</li>
-				<li>
-					<a href="setmeal.html">
-					  <span>套餐中心</span></a> 
-				  </li>
-				<li>
-				  <a href="myht.html">
-					<span>我的合同</span></a> 
-				  </li>
-				  <li>
-					<a href="mymb.html">
-					  <span>合同模板</span></a> 
-				  </li>
-				  <li>
-					<a href="accountMgt.html">
-					  <span>账户管理</span></a> 
-				  </li>
-				  <li>
-					<a href="usercenter.html">
-					  <span>用户中心</span></a> 
-				  </li> 
-              </ul>
+              <li>
+                <a href="account-index.html">
+					<span>我的签署</span></a>
+              </li>
+              <li>
+                <a href="myht.html">
+					<span>我的合同</span></a>
+              </li>
+              <li class="active">
+                <a href="mymb.html">
+					  <span>我的模板</span></a>
+              </li>
+              <li>
+                <a href="usercenter.html">
+            <span>我的信息</span></a>
+              </li>
+              <li>
+                <a href="accountMgt.html">
+					  <span>我的账户</span></a>
+              </li>
+              <li>
+                <a href="setmeal.html">
+					  <span>套餐中心</span></a>
+              </li>
+            </ul>
             </nav>
           </div>
           <!-- end of container --></div>
@@ -105,16 +107,16 @@
         <!-- Start of My Account Wrapper -->
         <div class="my-account-wrapper">
           <div class="contractContainer"> 
-				<div class="col-12 col-sm-12 col-md-12 margin-top-20"> 
-					<a class="breadcrumb-item" href="index.html">&lt;&lt;返回</a>  
+				<div class="margin-top-20"> 
+					<a class="btn btn-primary btn-sm w80 h31" href="mymb.html">返  回</a>  
 				</div> 
                      
 				<div class="main-dashboard">   
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-12 col-lg-9">
 						  <!-- Tab panes -->
-							<div class="tab-content dashboard-content" id="templateContent" style="margin: 0px auto;background:#dfdfdf" ondragover="allowDrop(event)" ondrop="drop(event)">   
-							  <canvas id="templateCanvas" class="canvas" height="1094" width="774px" style="border:1px solid #ccc;margin:20px auto;display: block;text-align:center"></canvas>						  
+							<div class="tab-content dashboard-content" id="templateContent" style="margin: 0px auto;background:#f8f8f8" ondragover="allowDrop(event)" ondrop="drop(event)">   
+							  <canvas id="templateCanvas" class="canvas canvas-bg" height="1094" width="774px" ></canvas>						  
 							</div>
 							<!-- end of tab-pane --> 
 						</div> 
@@ -122,13 +124,13 @@
 						<div class="col-12 col-sm-12 col-md-12 col-lg-3"> 
 						    <form id="login-form" role="form" class="form-horizontal">  
 								<div class="form-group row align-items-center">
-								  <label for="printName" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>模板名称</strong></label>
+								  <label for="printName" class="col-12 col-sm-12 col-md-12 col-form-label">模板名称</label>
 								  <div class="col-12 col-sm-12 col-md-12">
 									<input type="text" class="form-control" id="printName" name="printName" placeholder="输入模板名称" required>
 								  </div>
 								</div>
 								<div class="form-group row align-items-center">
-								  <label for="printName" class="col-12 col-sm-12 col-md-12 col-form-label"><strong>设置字体大小</strong></label>
+								  <label for="printName" class="col-12 col-sm-12 col-md-12 col-form-label">设置字体大小</label>
 								  <div class="col-12 col-sm-12 col-md-12">
 									<select class="form-control">
 									  <option>四号字体</option>
@@ -146,8 +148,8 @@
 								<div class="form-group row align-items-center" id="templateItemList"> 
 								</div>
 								
-								<div class="col-12 col-sm-12 col-md-12">
-									<a class="btn btn-customer-1" id="saveTemplateBtn" href="javascript:void(0)">保存模板</a> 
+								<div class="mt20">
+									<a class="btn btn-customer-1 w300" id="saveTemplateBtn" href="javascript:void(0)">保存模板</a> 
 								</div>
 							</form>
 						</div> 

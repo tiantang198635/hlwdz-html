@@ -24,8 +24,8 @@ $(function () {
 		/**
 		 * 添加项
 		 */
-		$('#templateItemList').append('<div class="row col-12 col-sm-12 col-md-12 margin-top-20" id="item_'+itemNum+'">'+
-										'<label class="col-2 col-sm-2 col-md-2 col-form-label text-center"><span class="item_num">'+itemNum+'</span></label>'+
+		$('#templateItemList').append('<div class="row col-12 col-sm-12 col-md-12" id="item_'+itemNum+'">'+
+										'<label class="col-2 col-sm-2 col-md-2 col-form-label text-center text-sz"><span class="item_num">'+itemNum+'</span></label>'+
 										'<div class="col-8 col-sm-8 col-md-8">'+
 										'	<input type="text" class="form-control" id="inputItemName'+itemNum+'" name="inputItemName" placeholder="输入项名称" required>'+
 										'</div>'+
