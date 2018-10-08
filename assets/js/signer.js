@@ -70,6 +70,19 @@ $(function () {
 	$('.goBack').click(function(){
 		window.history.back();
 	});
+
+	$('.pagingSeal-set').click(function(){
+		$('#flow_popup').css('visibility','visible');
+	});
+
+	/**
+	 *点击close按钮
+	 */
+	$('.p-close').click(function(){
+		var modePopup = $(this).parents('.model-popup');
+		var id = modePopup.attr('id');
+		$('#'+id).css('visibility','hidden');
+	});
 	
 	init(); 
 	initData();
